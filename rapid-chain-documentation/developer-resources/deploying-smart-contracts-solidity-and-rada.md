@@ -8,7 +8,7 @@ Rapid Chain supports a hybrid virtual machine architecture, allowing developers 
 
 **10.1. Deploying Solidity Contracts (EVM)**
 
-Standard Solidity contracts can be deployed using existing Ethereum tooling. This allows for rapid migration of existing DeFi protocols while benefiting from Canton’s institutional settlement.
+Standard Solidity contracts can be deployed using existing Ethereum tooling. This allows for rapid migration of existing DeFi protocols while benefiting from single-block finality.
 
 ```
 // Hardhat Deployment Script Example
@@ -69,4 +69,6 @@ end Rapid_Settlement;
 
 This ensures that critical financial operations like Multilateral Netting or Repo Collateral Calls are executed with the same level of rigor as flight control systems.
 
-<a class="button secondary">+1</a>
+**10.3. No-Code Option: Token Pilot**
+
+For standard ERC-20 tokens, [Token Pilot](https://tokenpilot.online) generates and deploys the contract straight from your own wallet — no Solidity required. Choose only the features you need (mint, burn, max-wallet limit, transfer cooldown); deployments are verifiable on Rapid Scan via CREATE2.

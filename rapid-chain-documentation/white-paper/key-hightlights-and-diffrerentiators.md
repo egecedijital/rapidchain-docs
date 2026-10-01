@@ -2,61 +2,81 @@
 icon: microchip
 ---
 
-# Key Hightlights and Diffrerentiators
+# Key Highlights and Differentiators
 
-Rapid Chain is designed to address the primary bottlenecks in institutional blockchain adoption: **performance, programmability, and liquidity**. Unlike consumer-facing crypto products, Rapid Chain is positioned as **critical infrastructure** that bridges the gap between Canton Network's institutional settlement and the speed of modern financial markets.
+Rapid Chain is designed to address the primary bottlenecks in institutional blockchain adoption: **performance, programmability, certainty and liquidity**. Unlike consumer-facing crypto products, Rapid Chain is positioned as **critical infrastructure** — an EVM network whose engine-level properties are designed for anyone settling real value.
 
 #### 3.1. Unified Execution Surface
 
 Rapid Chain introduces a versatile execution environment that supports **dual virtual machine capabilities**, ensuring accessibility for both AI-driven automation and safety-critical institutional systems.
 
-**EVM Compatibility:** Full compatibility with the Ethereum Virtual Machine provides immediate access to a mature ecosystem of developer tools, audited smart contracts, and industry-standard security practices.
+**EVM Compatibility:** Full compatibility with the Ethereum Virtual Machine provides immediate access to a mature ecosystem of developer tools, audited smart contracts and industry-standard security practices.
 
 **RAda High-Assurance VM:** For operations where correctness and formal verifiability are paramount—such as aerospace-grade financial logic—Rapid Chain offers the RAda language with mathematical proof of correctness.
 
-**AI Agent Runtime:** A specialized environment for autonomous economic agents that can perceive market conditions, make intelligent decisions, and execute transactions with atomic settlement on Canton Network.
+**AI Agent Runtime:** A specialized environment for autonomous economic agents that can perceive market conditions, make intelligent decisions and execute transactions that settle in a single, final block.
 
 **Programmable Financial Intents:** Transactions are treated as complex financial intents (e.g., margin logic, conditional execution, AI-driven strategies) rather than simple token transfers.
 
-#### 3.2. Institutional Liquidity & Market Interaction
+#### 3.2. What Others Don't Tell You: Engine-Level Differentiators
 
-By acting as an **execution layer external to the settlement network**, Rapid Chain enables institutions to interact with broader markets without compromising core regulatory requirements.
+Speed is table stakes. What sets Rapid Chain apart are the properties most networks never talk about — each one already powering a live product.
 
-**Batching & Netting Engine:** Rapid Chain optimizes network load by performing high-frequency matching and netting at the execution layer before committing minimal, clean state changes to Canton's system of record. This reduces settlement entries by over 90%.
+| Property | What it means | Where you see it |
+| -------- | ------------- | ---------------- |
+| **Single-Block Finality, Zero Reorgs** | Validators co-sign each block before it is appended; a block is final the instant it exists | Rapid Order escrow and SETBridge deposits settle in one block |
+| **Contract-Governed Validator Set** | The validator list lives in an on-chain contract; every change is a public transaction | Validator changes are auditable on Rapid Scan |
+| **Permissioning, On Demand** | Node- and account-level allowlists enforced natively — no fork, no sidecar | Approved-counterparty institutional flows |
+| **Lean State Engine** | Flat, pruned state layout; fast sync on modest hardware | Lower barrier for independent validators and indexers |
+| **GraphQL-Native Chain Data** | Built-in GraphQL alongside JSON-RPC and WebSocket subscriptions | RapidSwap charts and Rapid Scan live views |
+| **Node-Level Event Streaming** | Nodes stream blocks, transactions and logs straight into data pipelines | Real-time feeds for trading desks and analytics |
+| **Observable by Default** | Standard Prometheus and OpenTelemetry metrics on every node | SLA-grade monitoring from day one |
+| **Mainnet-Grade Execution Client** | An Apache-2.0, enterprise-grade Ethereum client — the same codebase that helps secure Ethereum mainnet | Institutional trust without vendor lock-in |
+| **Deterministic Contract Addresses** | CREATE2 lets a contract's address be known before deployment and proven afterwards | Token Pilot deployments verifiable on Rapid Scan |
 
-**Bridgeless Integration:** The network remains compatible with Canton through native DAML adapters, allowing for **atomic state transitions** between execution and final settlement. No intermediary bridges. No counterparty risk.
+**Probably final vs. actually final:**
 
-**Public Speed with Private Rigor:** Rapid Chain captures public-chain speed and composability while respecting Canton's permissioned identity frameworks and institutional standards.
+| | Probabilistic-finality chains | Rapid Chain |
+| - | ----------------------------- | ----------- |
+| Finality model | Probabilistic | Deterministic (BFT) |
+| Safe to credit a deposit after | Multiple confirmations | 1 block |
+| Chain reorganisation | Possible | Not possible |
+| Trade settlement | Delayed until "confident" | Immediate |
 
-#### 3.3. AI Agent Economy Infrastructure
+#### 3.3. Institutional Liquidity & Market Interaction
 
-Rapid Chain is the **first Canton-native platform** to enable autonomous AI agents for institutional finance.
+**Batching & Netting Engine:** Rapid Chain optimizes network load by performing high-frequency matching and netting at the execution layer before committing minimal, clean state changes on-chain. This reduces settlement entries by over 90%.
 
-**Autonomous Decision-Making:** Agents operate 24/7, monitoring markets, managing risk, and executing strategies without human intervention.
+**Live, Two-Sided Liquidity:** An AMM (RapidSwap) and a central limit order book (Rapid Order) run side by side, with SETUSD as the common quote asset.
 
-**Micro-Payment Infrastructure:** High-frequency, low-value transactions between agents settle instantly via Rapid Chain's payment hub, with finality guaranteed by Canton Network.
+**Public Speed with Institutional Rigor:** Rapid Chain captures public-chain speed and composability while offering permissioned zones and identity-linked roles for participants who need them.
+
+#### 3.4. AI Agent Economy Infrastructure
+
+Rapid Chain is built from the ground up to host autonomous AI agents for institutional finance.
+
+**Autonomous Decision-Making:** Agents operate 24/7, monitoring markets, managing risk and executing strategies without human intervention.
+
+**Micro-Payment Infrastructure:** High-frequency, low-value transactions between agents settle via Rapid Chain's payment hub, with finality guaranteed by single-block consensus.
 
 **Developer Monetization:** Agent creators earn 70% of fees generated by their deployed agents, creating sustainable incentives for innovation.
 
-**Compliance by Design:** Every agent inherits Canton's KYC/AML frameworks, ensuring regulatory alignment even for autonomous operations.
+**Compliance by Design:** Every agent inherits the network's KYC/AML hooks and permissioning controls, ensuring regulatory alignment even for autonomous operations.
 
-#### 3.4. Deterministic Performance
+#### 3.5. Deterministic Performance
 
 In institutional environments, predictability is as valuable as speed. Rapid Chain is architected to provide consistent, low-latency execution.
 
-**Fast Execution Finality:** The network utilizes optimized consensus mechanisms to ensure sub-second execution finality for AI agents and high-frequency strategies.
+**Single-Block Finality:** The deterministic BFT consensus finalises every block as it is produced, giving AI agents and high-frequency strategies certainty without a confirmation buffer.
 
 **Safety-Critical Logic:** By utilizing languages like RAda, institutions can deploy high-value or high-risk operations with assurance that exceeds general-purpose smart contract platforms.
 
-**Operational Friction Reduction:** The modular separation of execution and settlement significantly reduces latency for cross-institutional transfers and complex lifecycle management.
+**Operational Friction Reduction:** Execution and finality in the same block significantly reduce latency for cross-institutional transfers and complex lifecycle management.
 
-#### 3.5. Featured App Status & Ecosystem Alignment
+#### 3.6. Live Ecosystem & Validator Alignment
 
-**Canton Network Featured App:** Rapid Chain is officially recognized in the **Standard RW Platforms** category, with strategic support from the Canton Foundation.
+**Live Ecosystem:** Seven products are already running on Rapid Chain — RapidSwap, Rapid Order, Token Pilot, RocketPad, Rapid Wallet, Rapid Scan and SETUSD & SETBridge. See [Ecosystem](ecosystem.md).
 
 **Validator Alignment:** Rapid Chain validators are vetted, known entities rewarded based on utility and reliability rather than speculative drivers, reinforcing the network's positioning as utility-centric infrastructure.
 
-**Economic Sustainability:** All fees are algorithmically stabilized to maintain consistent USD-denominated value, ensuring institutional budgetary predictability.
-
-
-
+**Economic Sustainability:** All fees are algorithmically stabilized to maintain a consistent USD-denominated value, ensuring institutional budgetary predictability.

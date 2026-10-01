@@ -4,14 +4,14 @@ icon: image-stack
 
 # Institutional NFT Standards & Fractionalization Logic
 
-Rapid Chain extends traditional NFT standards (ERC-721/1155) to support high-value, non-fungible institutional assets. By integrating RAda’s safety-critical logic with the EVM’s flexibility, the network enables the tokenization and fractionalization of complex financial instruments that are legally anchored on the Canton Network.
+Rapid Chain extends traditional NFT standards (ERC-721/1155) to support high-value, non-fungible institutional assets. By integrating RAda’s safety-critical logic with the EVM’s flexibility, the network enables the tokenization and fractionalization of complex financial instruments that are anchored to verifiable legal records.
 
 **I. Beyond Digital Art: Financial NFTs**
 
-Institutional NFTs on Rapid Chain represent real-world ownership and contractual rights. Unlike consumer-grade NFTs, these assets are bound by legal finality on the settlement layer.
+Institutional NFTs on Rapid Chain represent real-world ownership and contractual rights. Unlike consumer-grade NFTs, these assets are bound to legal documentation and settle with single-block finality.
 
-* Real-World Asset Anchoring: Each NFT minted on Rapid Chain is linked to a unique asset reference (e.g., a property deed, a repo package, or a credit instrument) recorded on the Canton system of record.
-*   Atomic Ownership Transfer: When an institutional NFT is traded on the Rapid Chain execution layer, the legal ownership update on the Canton Network occurs as an indivisible, atomic event.
+* Real-World Asset Anchoring: Each NFT minted on Rapid Chain is linked to a unique asset reference (e.g., a property deed, a repo package, or a credit instrument). The legal documents stay with the issuer or custodian; their hash is recorded on-chain.
+*   Atomic Ownership Transfer: When an institutional NFT is traded on Rapid Chain, payment and ownership change in the same transaction — an indivisible, atomic event that is final in a single block.
 
 
 
@@ -38,20 +38,20 @@ contract RapidInstitutionalNFT is ERC721 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    // Mapping NFT ID to its authoritative legal record on Canton
-    mapping(uint256 => bytes32) public cantonLegalReference;
+    // Mapping NFT ID to the hash of its authoritative legal record
+    mapping(uint256 => bytes32) public legalReference;
 
     /**
-     * @dev Mints an NFT linked to a Canton system-of-record asset.
+     * @dev Mints an NFT linked to an off-chain legal asset record.
      * @param _owner The institutional entity receiving the token.
-     * @param _legalHash The hash of the asset record on the Canton Participant Node.
+     * @param _legalHash The hash of the asset's legal record held by the issuer or custodian.
      */
     function mintAssetToken(address _owner, bytes32 _legalHash) public {
         uint256 newItemId = _tokenIds.current();
         _mint(_owner, newItemId);
         
-        // Permanent link to the settlement layer's asset custody record
-        cantonLegalReference[newItemId] = _legalHash;
+        // Permanent on-chain link to the asset's legal record
+        legalReference[newItemId] = _legalHash;
         _tokenIds.increment();
     }
 }

@@ -4,17 +4,15 @@ icon: shield-check
 
 # Safety, Privacy, and Compliance
 
-Rapid Chain is engineered with a "Privacy-First" and "Compliance-First" mindset, ensuring that institutional participants can leverage public-chain dynamics without compromising regulatory obligations. The network enforces a strict separation between high-frequency execution data and the sensitive records stored on the settlement layer.
+Rapid Chain is engineered with a "Compliance-First" mindset and a staged privacy roadmap, ensuring that institutional participants can leverage public-chain dynamics without compromising regulatory obligations.
 
-#### 5.1. The "Need-to-Know" Privacy Model
+#### 5.1. Privacy Model: Transparent by Default, Private by Design
 
-Unlike permissionless blockchains that broadcast all transaction data to every participant, Rapid Chain adopts a privacy framework where information is shared only with involved parties.
+Rapid Chain is a public EVM ledger: transactions are verifiable by anyone through Rapid Scan. Institutional confidentiality is achieved through design choices layered on top of that transparency.
 
-* Application-Level Privacy: Sensitive data is abstracted from on-chain logic to ensure that only the final, netted results are visible where necessary.
-* Data Isolation: Rapid Chain nodes maintain local state for execution, ensuring that full transaction histories are not replayed or audited by unauthorized third parties.
-* Confidential State Transitions: Interactions are structured through deterministic and auditable state transitions, preserving institutional confidentiality while maintaining a verifiable chain of custody.
-
-![Privacy Model](https://rapidchain.io/images/9.png)
+* Application-Level Privacy: Sensitive business data is kept off-chain; only the final, netted results — or cryptographic commitments to them — are written on-chain.
+* Permissioned Zones: Protocol-level allowlists can restrict which accounts may interact with specific contracts, and which nodes may join, for workflows that require approved counterparties.
+* Verifiable Audit Trail: Every state change is deterministic and publicly auditable, preserving a verifiable chain of custody.
 
 #### 5.2. Staged Privacy Roadmap
 
@@ -26,13 +24,13 @@ Privacy is implemented progressively to align with both technical maturity and i
 | Phase 2   | Off-Chain Confidential Data | Reduces on-chain volume while preserving verifiability.  |
 | Phase 3   | Zero-Knowledge Proofs (ZK)  | Full cryptographic privacy with maintained auditability. |
 
-#### 5.3. Regulatory Alignment and Legal Finality
+#### 5.3. Regulatory Alignment and Finality
 
-Rapid Chain ensures that all regulated assets and legal ownership records remain within the secure perimeter of the Canton Network.
+Rapid Chain gives regulated workflows the certainty they need.
 
-* System of Record: Canton remains the authoritative source for legal finality, asset custody, and identity frameworks.
-* Auditability: While the execution layer is optimized for speed, every state change remains auditable to ensure compliance with jurisdictional requirements.
-* Deterministic Finality: The use of BFT-style consensus ensures that once a transaction is netted and batched, its settlement instruction is deterministic and final.
+* System of Record: The Rapid Chain ledger is the authoritative record of on-chain ownership. Legal documentation for real-world assets stays with issuers and custodians and is referenced on-chain by hash.
+* Auditability: Every state change remains auditable to ensure compliance with jurisdictional requirements.
+* Deterministic Finality: BFT consensus finalises each block as it is produced; once a transaction is included, it cannot be reversed by a chain reorganisation.
 
 #### 5.4. Safety-Critical Implementation
 
@@ -41,16 +39,17 @@ For high-value operations, Rapid Chain utilizes RAda, a safety-critical programm
 ```
 // Example: Compliance-Locked Execution Intent
 contract RegulatoryCompliance {
+    IIdentityRegistry public identityRegistry;
+
     // Defines a permissioned access check for institutional assets
     modifier onlyVettedParticipants(address _participant) {
-        require(checkCantonIdentity(_participant), "Participant not in identity framework");
+        require(identityRegistry.isVerified(_participant), "Participant not in identity framework");
         _;
     }
 
     function executeRestrictedTrade(address _to, uint256 _amount) public onlyVettedParticipants(msg.sender) {
         // High-assurance execution logic via RAda/EVM hybrid
-        // Instructions are batched before Canton settlement
+        // Netted results settle on-chain in a single, final block
     }
 }
 ```
-
