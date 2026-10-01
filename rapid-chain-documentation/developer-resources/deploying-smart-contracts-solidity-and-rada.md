@@ -71,4 +71,4 @@ This ensures that critical financial operations like Multilateral Netting or Rep
 
 **10.3. No-Code Option: Token Pilot**
 
-For standard ERC-20 tokens, [Token Pilot](https://tokenpilot.online) generates and deploys the contract straight from your own wallet — no Solidity required. Choose only the features you need (mint, burn, max-wallet limit, transfer cooldown); deployments are verifiable on Rapid Scan via CREATE2.
+For standard ERC-20 tokens, [Token Pilot](https://tokenpilot.online) generates and deploys the contract straight from your own wallet, with no Solidity required. Choose only the features you need (mint, burn, max-wallet limit, transfer cooldown); deployments are verifiable on Rapid Scan via CREATE2.

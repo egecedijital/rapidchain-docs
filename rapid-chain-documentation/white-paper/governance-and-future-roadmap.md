@@ -21,14 +21,14 @@ Governance on Rapid Chain is a functional mechanism used to steer the network's 
 | **Governance Component** | **Institutional Logic**                                                                         |
 | ------------------------ | ----------------------------------------------------------------------------------------------- |
 | Protocol Upgrades        | Managed via a super-majority vote of vetted validators to ensure stability.                     |
-| Validator Inclusion      | Prospective validators are approved by governance and added through the on-chain validator contract — every change auditable on Rapid Scan. |
+| Validator Inclusion      | Prospective validators are approved by governance and added through the on-chain validator contract, with every change auditable on Rapid Scan. |
 | Fee Structuring          | Governance determines the USD-stabilized fee tiers for different execution types.               |
 
 #### 7.3. Strategic Roadmap: 2026 and Beyond
 
 The roadmap prioritizes rapid initial delivery followed by deep integration and advanced privacy features.
 
-* Short-Term (Delivered): The core execution engine, full EVM compatibility, single-block finality and the live ecosystem suite — RapidSwap, Rapid Order, Token Pilot, RocketPad, Rapid Wallet, Rapid Scan and SETUSD & SETBridge.
+* Short-Term (Delivered): The core execution engine, full EVM compatibility, single-block finality and the live ecosystem suite: RapidSwap, Rapid Order, Token Pilot, RocketPad, Rapid Wallet, Rapid Scan and SETUSD & SETBridge.
 * Mid-Term (Expansion): Off-chain confidential data management, broader validator participation through PoS and the AI Agent Marketplace on mainnet.
 * Long-Term (Maturity): Integration of Zero-Knowledge Proofs (ZK) for full cryptographic privacy and deep interoperability with both public and permissioned networks.
 

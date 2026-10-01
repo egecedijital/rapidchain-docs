@@ -11,7 +11,7 @@ Rapid Chain extends traditional NFT standards (ERC-721/1155) to support high-val
 Institutional NFTs on Rapid Chain represent real-world ownership and contractual rights. Unlike consumer-grade NFTs, these assets are bound to legal documentation and settle with single-block finality.
 
 * Real-World Asset Anchoring: Each NFT minted on Rapid Chain is linked to a unique asset reference (e.g., a property deed, a repo package, or a credit instrument). The legal documents stay with the issuer or custodian; their hash is recorded on-chain.
-*   Atomic Ownership Transfer: When an institutional NFT is traded on Rapid Chain, payment and ownership change in the same transaction — an indivisible, atomic event that is final in a single block.
+*   Atomic Ownership Transfer: When an institutional NFT is traded on Rapid Chain, payment and ownership change in the same transaction: an indivisible, atomic event that is final in a single block.
 
 
 

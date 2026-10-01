@@ -20,7 +20,7 @@ Rapid Chain runs a deterministic BFT consensus. Validators co-sign each block be
 In practice this means you can remove reorg buffers and rollback handling from exchanges, payment processors and agents:
 
 ```javascript
-// ethers v6 — on Rapid Chain one confirmation is final
+// ethers v6: on Rapid Chain one confirmation is final
 const tx = await setusd.transfer(recipient, amount);
 const receipt = await tx.wait(1); // final once included; no reorg buffer needed
 
@@ -34,7 +34,7 @@ SETBridge connects BNB Chain to Rapid Chain. Every USDT locked on BNB Chain mint
 **Step-by-Step Process:**
 
 1. Lock: The user locks USDT on BNB Chain through SETBridge.
-2. Mint: SETUSD is minted 1:1 to the user's address on Rapid Chain — final in a single block.
+2. Mint: SETUSD is minted 1:1 to the user's address on Rapid Chain, final in a single block.
 3. Verify: The mint is publicly visible on Rapid Scan.
 4. Use: SETUSD is immediately usable on Rapid Order (RAPID/SETUSD) and in RapidSwap liquidity pools.
 
@@ -61,4 +61,4 @@ const [raw, decimals] = await Promise.all([setusd.balanceOf(account), setusd.dec
 console.log(`SETUSD balance: ${formatUnits(raw, decimals)}`);
 ```
 
-> **Note:** Because trades on Rapid Order settle through smart-contract escrow on Rapid Chain, every fill inherits the same single-block finality — and can be verified on Rapid Scan.
+> **Note:** Because trades on Rapid Order settle through smart-contract escrow on Rapid Chain, every fill inherits the same single-block finality and can be verified on Rapid Scan.

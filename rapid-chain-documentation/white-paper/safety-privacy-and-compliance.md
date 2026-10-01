@@ -10,7 +10,7 @@ Rapid Chain is engineered with a "Compliance-First" mindset and a staged privacy
 
 Rapid Chain is a public EVM ledger: transactions are verifiable by anyone through Rapid Scan. Institutional confidentiality is achieved through design choices layered on top of that transparency.
 
-* Application-Level Privacy: Sensitive business data is kept off-chain; only the final, netted results — or cryptographic commitments to them — are written on-chain.
+* Application-Level Privacy: Sensitive business data is kept off-chain; only the final, netted results (or cryptographic commitments to them) are written on-chain.
 * Permissioned Zones: Protocol-level allowlists can restrict which accounts may interact with specific contracts, and which nodes may join, for workflows that require approved counterparties.
 * Verifiable Audit Trail: Every state change is deterministic and publicly auditable, preserving a verifiable chain of custody.
 

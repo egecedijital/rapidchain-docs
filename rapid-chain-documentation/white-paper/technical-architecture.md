@@ -46,14 +46,14 @@ Rapid Chain is a **high-assurance EVM network**. Instead of treating speed and c
 
 **Layer 3: Finality Layer**
 
-* Deterministic BFT consensus — validators co-sign every block before it is appended
-* Single-block finality — no forks to resolve, no reorganisation window
+* Deterministic BFT consensus: validators co-sign every block before it is appended
+* Single-block finality, with no forks to resolve and no reorganisation window
 * Validator set governed by an on-chain smart contract
 * Protocol-level permissioning, available on demand
 
 **Sovereignty & Control:** Every participant keeps full control of their own keys, nodes and AI models. No state change can be forced without a valid, quorum-signed transaction, and no finalised block can ever be rolled back.
 
-![Speed Meets Certainty — execution and finality in the very same block.](../.gitbook/assets/speed-meets-certainty.png)
+![Speed Meets Certainty: execution and finality in the very same block.](../.gitbook/assets/speed-meets-certainty.png)
 
 #### 2.2. AI Agent Runtime
 
@@ -110,7 +110,7 @@ class RiskMonitoringAgent(Agent):
             }
         )
 
-        # Settle directly on Rapid Chain — final in a single block
+        # Settle directly on Rapid Chain; final in a single block
         self.settlement = Settlement(
             network="rapid-chain",
             settlement_asset="SETUSD"
@@ -188,7 +188,7 @@ if __name__ == "__main__":
 | -------------------------- | ---------------------------------------------------------------------------------------------------- |
 | **Sandbox Isolation**      | Each agent runs in a containerized environment with resource limits                                  |
 | **State Persistence**      | Agent memory and learning state stored in an encrypted local database                                |
-| **Single-Block Settlement** | All financial actions settle via `settlement.execute()`; a receipt means the block is final — no rollback window |
+| **Single-Block Settlement** | All financial actions settle via `settlement.execute()`; a receipt means the block is final, with no rollback window |
 | **Compliance Enforcement** | KYC/AML hooks execute before any state-changing operation                                            |
 | **Metered Execution**      | Compute and storage costs tracked in real time, billed in $RAPID                                     |
 
@@ -196,9 +196,9 @@ if __name__ == "__main__":
 
 The core of Rapid Chain's reliability is its **finality engine**.
 
-**Single-Block Finality:** Rapid Chain runs a deterministic BFT consensus protocol. Validators co-sign each block before it is appended; once the quorum has signed, the block is final. There are no forks to resolve and no "wait N confirmations" — a deposit, a trade or a margin call is final the instant its block exists.
+**Single-Block Finality:** Rapid Chain runs a deterministic BFT consensus protocol. Validators co-sign each block before it is appended; once the quorum has signed, the block is final. There are no forks to resolve and no "wait N confirmations". A deposit, a trade or a margin call is final the instant its block exists.
 
-**Contract-Governed Validator Set:** The list of validators lives in an on-chain smart contract. Adding or removing a validator is itself a transaction — public, timestamped and permanently auditable on Rapid Scan.
+**Contract-Governed Validator Set:** The list of validators lives in an on-chain smart contract. Adding or removing a validator is itself a transaction: public, timestamped and permanently auditable on Rapid Scan.
 
 **Permissioning on Demand:** The protocol can enforce node- and account-level allowlists natively, without a custom fork or sidecar. Regulated participants can operate in controlled zones while the network as a whole stays open.
 
@@ -210,9 +210,9 @@ Rapid Chain provides a **dual-engine virtual machine** to serve both Web3 develo
 
 **Full EVM Compatibility:** Standard Solidity smart contracts deploy unchanged, enabling rapid migration of existing DeFi protocols while benefiting from single-block finality. RapidSwap, Rapid Order and SETUSD all run on the EVM layer today.
 
-**RAda High-Assurance VM:** For safety-critical operations—such as collateral netting, repo margin calls and high-value settlements—RAda provides aerospace-grade formal verifiability. Every instruction has predictable, deterministic state transitions with mathematical proof of correctness.
+**RAda High-Assurance VM:** For safety-critical operations, such as collateral netting, repo margin calls and high-value settlements, RAda provides aerospace-grade formal verifiability. Every instruction has predictable, deterministic state transitions with mathematical proof of correctness.
 
-**Selective Usage:** Developers choose the appropriate environment—EVM for rapid innovation, RAda for institutional-grade safety.
+**Selective Usage:** Developers choose the appropriate environment: EVM for rapid innovation, RAda for institutional-grade safety.
 
 #### 2.5. Interoperability: SETBridge
 
@@ -233,7 +233,7 @@ Rapid Chain connects outward without compromising its own finality. **SETBridge*
 | Feature                    | Specification                                                         |
 | -------------------------- | --------------------------------------------------------------------- |
 | **Consensus Mechanism**    | Deterministic BFT with a contract-governed validator set              |
-| **Finality**               | Single block — no confirmation wait, no reorganisation                |
+| **Finality**               | Single block, with no confirmation wait and no reorganisation         |
 | **Privacy Model**          | Public ledger by default; protocol-level permissioning on demand; staged ZK roadmap |
 | **State Storage**          | Lean, flat, pruned state layout for fast sync on modest hardware       |
 | **Interoperability**       | SETBridge (BNB Chain → Rapid Chain)                                    |

@@ -45,7 +45,7 @@ contract RepoManagement {
             // 2. Trigger automated collateral request
             emit MarginCallTriggered(repoId);
 
-            // 3. Settle the collateral adjustment — final in the same block
+            // 3. Settle the collateral adjustment (final in the same block)
             settleCollateralAdjustment(repoId);
         }
     }

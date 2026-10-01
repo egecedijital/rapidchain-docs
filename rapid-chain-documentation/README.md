@@ -34,15 +34,15 @@ layout:
 
 **Rapid Chain** is a **high-assurance EVM network** built for the **AI Agent Economy** and **Real-World Asset (RWA) tokenization**. It pairs full Ethereum compatibility with **deterministic single-block finality** and **RAda**, a formally verified contract language for safety-critical financial logic.
 
-The network is live — and so is its ecosystem. **RapidSwap**, **Rapid Order**, **Token Pilot**, **RocketPad**, **Rapid Wallet**, **Rapid Scan** and **SETUSD & SETBridge** are running on Rapid Chain today (see [Ecosystem](white-paper/ecosystem.md)).
+The network is live, and so is its ecosystem. **RapidSwap**, **Rapid Order**, **Token Pilot**, **RocketPad**, **Rapid Wallet**, **Rapid Scan** and **SETUSD & SETBridge** are running on Rapid Chain today (see [Ecosystem](white-paper/ecosystem.md)).
 
-![Rapid Chain — The High-Assurance EVM for Autonomous Finance](.gitbook/assets/hero.png)
+![Rapid Chain: The High-Assurance EVM for Autonomous Finance](.gitbook/assets/hero.png)
 
 Our **three-layer architecture** separates concerns where they matter most:
 
 * **User Layer:** Wallets, exchanges, token tools and developer interfaces
 * **Execution Layer:** Full EVM, the RAda high-assurance VM and the AI Agent Runtime
-* **Finality Layer:** Deterministic BFT consensus — every block is final the moment it is produced, and the validator set is governed by an on-chain contract
+* **Finality Layer:** Deterministic BFT consensus. Every block is final the moment it is produced, and the validator set is governed by an on-chain contract
 
 This design gives financial applications the **speed and openness of public markets** together with the **certainty institutions require**.
 
@@ -61,7 +61,7 @@ The **Issuer Risk Reality** remains central to our philosophy: real-world assets
 
 The digital asset landscape is fragmented into "liquidity islands," and moving value between them has historically meant opaque bridges and long confirmation waits. **Rapid Chain keeps bridging minimal, transparent and final.**
 
-With **SETBridge**, every USDT locked on BNB Chain mints **SETUSD 1:1** on Rapid Chain. Each mint lands in a single, final block and can be verified on **Rapid Scan**. Once on Rapid Chain, trading, liquidity provision and settlement happen natively — no further hops.
+With **SETBridge**, every USDT locked on BNB Chain mints **SETUSD 1:1** on Rapid Chain. Each mint lands in a single, final block and can be verified on **Rapid Scan**. Once on Rapid Chain, trading, liquidity provision and settlement happen natively, with no further hops.
 
 #### 1.4. Mission: The Agent Economy on Rapid Chain
 
@@ -77,5 +77,5 @@ Rapid Chain creates a modular financial system where:
 **We are building a future where:**
 
 * Execution happens where **speed and intelligence** matter most
-* Finality is **immediate and irreversible** — not "probably final"
+* Finality is **immediate and irreversible**, not "probably final"
 * **AI agents** and **human institutions** transact seamlessly on a unified infrastructure

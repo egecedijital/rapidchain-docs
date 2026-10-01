@@ -4,7 +4,7 @@ icon: diagram-project
 
 # Network Economics & Alignment
 
-The economic framework of Rapid Chain is engineered to ensure long-term sustainability and institutional alignment. Because finality is native to the network, a single, predictable fee covers both execution and settlement — providing a scalable environment for complex financial operations.
+The economic framework of Rapid Chain is engineered to ensure long-term sustainability and institutional alignment. Because finality is native to the network, a single, predictable fee covers both execution and settlement, providing a scalable environment for complex financial operations.
 
 #### 4.1. The Fee Model
 
@@ -23,7 +23,7 @@ Rapid Chain uses a simple, single-layer approach to network costs and incentives
 | Primary Role          | Execution gas, validator staking, governance    | Native stablecoin and reference unit for trading             |
 | Where It Is Used      | Every transaction, agent deployment, marketplace | Rapid Order (RAPID/SETUSD), RapidSwap pools, treasury flows |
 | Issuance              | Network utility token                           | Minted 1:1 against USDT locked on BNB Chain via SETBridge    |
-| Fee Denomination      | USD-Stabilized                                  | —                                                            |
+| Fee Denomination      | USD-Stabilized                                  | N/A                                                          |
 
 #### 4.3. Logic Implementation: Fee Handling
 
@@ -36,7 +36,7 @@ contract EconomicAlignment {
 
     function calculateTotalFee(uint256 gasUsed) public view returns (uint256) {
         // $RAPID execution fee based on current USD rates.
-        // Finality is included — there is no separate settlement fee.
+        // Finality is included; there is no separate settlement fee.
         return gasUsed * getRapidPriceOracle();
     }
 }

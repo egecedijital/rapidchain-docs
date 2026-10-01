@@ -4,7 +4,7 @@ icon: microchip
 
 # Key Highlights and Differentiators
 
-Rapid Chain is designed to address the primary bottlenecks in institutional blockchain adoption: **performance, programmability, certainty and liquidity**. Unlike consumer-facing crypto products, Rapid Chain is positioned as **critical infrastructure** — an EVM network whose engine-level properties are designed for anyone settling real value.
+Rapid Chain is designed to address the primary bottlenecks in institutional blockchain adoption: **performance, programmability, certainty and liquidity**. Unlike consumer-facing crypto products, Rapid Chain is positioned as **critical infrastructure**: an EVM network whose engine-level properties are designed for anyone settling real value.
 
 #### 3.1. Unified Execution Surface
 
@@ -12,7 +12,7 @@ Rapid Chain introduces a versatile execution environment that supports **dual vi
 
 **EVM Compatibility:** Full compatibility with the Ethereum Virtual Machine provides immediate access to a mature ecosystem of developer tools, audited smart contracts and industry-standard security practices.
 
-**RAda High-Assurance VM:** For operations where correctness and formal verifiability are paramount—such as aerospace-grade financial logic—Rapid Chain offers the RAda language with mathematical proof of correctness.
+**RAda High-Assurance VM:** For operations where correctness and formal verifiability are paramount, such as aerospace-grade financial logic, Rapid Chain offers the RAda language with mathematical proof of correctness.
 
 **AI Agent Runtime:** A specialized environment for autonomous economic agents that can perceive market conditions, make intelligent decisions and execute transactions that settle in a single, final block.
 
@@ -20,18 +20,18 @@ Rapid Chain introduces a versatile execution environment that supports **dual vi
 
 #### 3.2. What Others Don't Tell You: Engine-Level Differentiators
 
-Speed is table stakes. What sets Rapid Chain apart are the properties most networks never talk about — each one already powering a live product.
+Speed is table stakes. What sets Rapid Chain apart are the properties most networks never talk about, and each one is already powering a live product.
 
 | Property | What it means | Where you see it |
 | -------- | ------------- | ---------------- |
 | **Single-Block Finality, Zero Reorgs** | Validators co-sign each block before it is appended; a block is final the instant it exists | Rapid Order escrow and SETBridge deposits settle in one block |
 | **Contract-Governed Validator Set** | The validator list lives in an on-chain contract; every change is a public transaction | Validator changes are auditable on Rapid Scan |
-| **Permissioning, On Demand** | Node- and account-level allowlists enforced natively — no fork, no sidecar | Approved-counterparty institutional flows |
+| **Permissioning, On Demand** | Node- and account-level allowlists enforced natively, with no fork and no sidecar | Approved-counterparty institutional flows |
 | **Lean State Engine** | Flat, pruned state layout; fast sync on modest hardware | Lower barrier for independent validators and indexers |
 | **GraphQL-Native Chain Data** | Built-in GraphQL alongside JSON-RPC and WebSocket subscriptions | RapidSwap charts and Rapid Scan live views |
 | **Node-Level Event Streaming** | Nodes stream blocks, transactions and logs straight into data pipelines | Real-time feeds for trading desks and analytics |
 | **Observable by Default** | Standard Prometheus and OpenTelemetry metrics on every node | SLA-grade monitoring from day one |
-| **Mainnet-Grade Execution Client** | An Apache-2.0, enterprise-grade Ethereum client — the same codebase that helps secure Ethereum mainnet | Institutional trust without vendor lock-in |
+| **Mainnet-Grade Execution Client** | An Apache-2.0, enterprise-grade Ethereum client, the same codebase that helps secure Ethereum mainnet | Institutional trust without vendor lock-in |
 | **Deterministic Contract Addresses** | CREATE2 lets a contract's address be known before deployment and proven afterwards | Token Pilot deployments verifiable on Rapid Scan |
 
 **Probably final vs. actually final:**
@@ -75,7 +75,7 @@ In institutional environments, predictability is as valuable as speed. Rapid Cha
 
 #### 3.6. Live Ecosystem & Validator Alignment
 
-**Live Ecosystem:** Seven products are already running on Rapid Chain — RapidSwap, Rapid Order, Token Pilot, RocketPad, Rapid Wallet, Rapid Scan and SETUSD & SETBridge. See [Ecosystem](ecosystem.md).
+**Live Ecosystem:** Seven products are already running on Rapid Chain: RapidSwap, Rapid Order, Token Pilot, RocketPad, Rapid Wallet, Rapid Scan and SETUSD & SETBridge. See [Ecosystem](ecosystem.md).
 
 **Validator Alignment:** Rapid Chain validators are vetted, known entities rewarded based on utility and reliability rather than speculative drivers, reinforcing the network's positioning as utility-centric infrastructure.
 

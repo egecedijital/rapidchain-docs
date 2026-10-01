@@ -13,7 +13,7 @@ Rapid Execution Nodes treat transactions as complex financial intents rather tha
 
 * Netting and Matching Engine: These nodes perform real-time multilateral netting, reducing the number of final transactions written on-chain by over 90%.
 * Dual VM Support: Nodes concurrently run a high-performance EVM for standard dApp logic and the RAda VM for safety-critical, formally verified institutional operations.
-* Local Data Isolation: To ensure institutional confidentiality, full execution details—such as intermediate state changes and netting logic—are maintained locally within the execution node and are not broadcast to the entire network.
+* Local Data Isolation: To ensure institutional confidentiality, full execution details (such as intermediate state changes and netting logic) are maintained locally within the execution node and are not broadcast to the entire network.
 * Intent-to-Transaction Pipeline: The node translates complex bilateral agreements and margin logic into clean, minimal on-chain transactions.
 
 #### 12.2. Technical Deployment Specifications

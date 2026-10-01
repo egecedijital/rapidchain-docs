@@ -4,7 +4,7 @@ icon: hexagon-nodes
 
 # Network Information
 
-#### To begin developing on Rapid Chain, configure your environment to connect to the network. Rapid Chain is a fully EVM-compatible network, so your existing tools — Hardhat, Foundry, ethers, viem and standard wallets — work unchanged.
+#### To begin developing on Rapid Chain, configure your environment to connect to the network. Rapid Chain is a fully EVM-compatible network, so your existing tools (Hardhat, Foundry, ethers, viem and standard wallets) work unchanged.
 
 **9.1. Connectivity Parameters**
 
