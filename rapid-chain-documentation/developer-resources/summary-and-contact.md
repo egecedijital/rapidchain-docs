@@ -34,9 +34,7 @@ Rapid Chain is live, with a full ecosystem of DeFi tools in production. We invit
 
 Connect with the Rapid Chain Core Team:
 
-* Institutional Inquiries: partners@rapidchain.io
-* Developer Support: devs@rapidchain.io
-* Network Governance: foundation@rapidchain.io
-* Community Support: contact@rapidchain.io
+* Institutional Inquiries & Partnerships: partner@rapidchain.io
+* Developer Support, Network Governance & Community: contact@rapidchain.io
 * Official Website: [www.rapidchain.io](https://www.rapidchain.io)
 * Ecosystem: [RapidSwap](https://rapidswap.finance) · [Rapid Order](https://rapidorder.online) · [Token Pilot](https://tokenpilot.online) · [RocketPad](https://rocketpad.space) · [Rapid Wallet](https://wallet.rapidchain.io) · [Rapid Scan](https://scan.rapidchain.io) · [SETUSD](https://setusd.com/)
